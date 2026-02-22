@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: devops-application-deployment
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: devops-application
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devops-application
-          image: mimaraslan/devops-application:latest
+          image: mimaraslan/devops-application:1.0.35
           resources:
             limits:
               memory: "300Mi"
