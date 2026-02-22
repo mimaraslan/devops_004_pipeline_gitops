@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devops-application
-          image: mimaraslan/devops-application:1.0.35
+          image: mimaraslan/devops-application:1.0.34
           resources:
             limits:
               memory: "300Mi"
