@@ -6,6 +6,6 @@ spec:
   selector:
     app: devops-application
   ports:
-    - port: 9090   # Service'in dinleyeceği port
+    - port: 8080   # Service'in dinleyeceği port
       targetPort: 8080   # Pod içindeki .jar uygulamanın portu - containerPort ile aynı olmalı
-  type: NodePort    # Service tipi (ClusterIP, NodePort, LoadBalancer, vb.)
+  type: LoadBalancer    # Service tipi (ClusterIP, NodePort, LoadBalancer, vb.)
